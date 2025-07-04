@@ -40,7 +40,7 @@ fun NoteApp() {
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("📓 Buku Catatan Sederhana") }
+                title = { Text("Buku Catatan Sederhana") }
             )
         },
         content = { padding ->
@@ -112,7 +112,7 @@ fun NoteApp() {
                     Spacer(modifier = Modifier.height(20.dp))
                 }
 
-                Text("📚 Catatan Anda (${notesData.size}):", fontWeight = FontWeight.Bold, textAlign = TextAlign.Start)
+                Text("Catatan Anda (${notesData.size}):", fontWeight = FontWeight.Bold, textAlign = TextAlign.Start)
 
                 notesData.forEachIndexed { index, note ->
                     Card(
