@@ -1,4 +1,4 @@
-package com.ferry.noten
+package com.ferry.noten // sesuaikan nama projek
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -16,13 +16,14 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.ferry.noten.ui.theme.NoteNTheme // sesuaikan dengan nama project dan lanjut ke ui.theme/theme.kt
 
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            NoteNTheme {
+            NoteNTheme { //sesuaikan dengan nama project
                 NoteApp()
             }
         }
